@@ -15,7 +15,7 @@ public class App {
 	    Morphia morphia = new Morphia();    
 	    MongoClient mongo = new MongoClient();
 	    morphia.map(Person.class).map(Address.class);
-	    Datastore ds = morphia.createDatastore(mongo, "my_database");
+	    Datastore ds = morphia.createDatastore(mongo, "tp3SIR");
 	    
 	    Person p = new Person();
 	
